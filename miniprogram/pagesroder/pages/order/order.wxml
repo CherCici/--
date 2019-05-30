@@ -1,0 +1,86 @@
+<!--pages/order/order-detail/order-detail.wxml-->
+
+<view class="order-detail-contaniner">
+
+  <view class="order-scenic">
+    <view class="order-scenic-information">
+      <view class="order-scenic-in" wx:for="{{scenic_list}}" wx:for-item="item" wx:key="key">
+        <view class="order-scenic-name">{{item.s_name}}</view>
+        <view class="order-scenic-price">
+          <text class="text1">{{item.price}}</text>
+          <text class="text2">  /张</text>
+        </view>
+      </view>
+    </view>
+    <view class="order-date">
+
+      <view class="date">
+
+        <view class="order-date-header" hover-class="weui-cell_active" catchtap='showModalBtn'>
+          <view class="chooseDate">选择日期</view>
+          <view class="showDate">使用日期：{{ cur_year}}/{{cur_month}}/{{ todayIndex+1}}</view>
+          <view class="moreDate">更多日期 >></view>
+        </view>
+      </view>
+
+      <view class="modal-mask" wx:if="{{false/true}}" bindtap="hideModal" catchtouchmove="preventTouchMove" hidden="{{showModal}}"></view>
+      <view class="modal-dialog" hidden="{{showModal}}">
+        <view class="canlendarBgView">
+          <view class="canlendarView">
+            <view class="canlendarTopView">
+              <view class="leftBgView" bindtap="handleCalendar" data-handle="prev">
+                <view class="leftView">《</view>
+              </view>
+              <view class="centerView">{{cur_year || "--"}} 年 {{cur_month || "--"}} 月</view>
+              <view class="rightBgView" bindtap="handleCalendar" data-handle="next">
+                <view class="rightView">》</view>
+              </view>
+            </view>
+            <view class="weekBgView">
+              <view class="weekView" wx:for="{{weeks_ch}}" wx:key="{{index}}" data-idx="{{index}}">{{item}}</view>
+            </view>
+            <view class="dateBgView">
+              <view wx:if="{{hasEmptyGrid}}" class="dateEmptyView" wx:for="{{empytGrids}}" wx:key="{{index}}" data-idx="{{index}}">
+              </view>
+              <view class="dateView" wx:for="{{days}}" wx:key="{{index}}" data-idx="{{index}}" bindtap="dateSelectAction">
+                <view class="datesView {{index == todayIndex ? 'dateSelectView' : ''}}">{{item}}</view>
+              </view>
+            </view>
+          </view>
+        </view>
+
+      </view>
+
+      <view class="order-scenic-1">
+        <view class="order-scenic-count">购买数量</view>
+        <view class="order-scenic-stepper">
+          <text class="{{min}}" bindtap='bindmin'>-</text>
+          <input type="number" bindchange="bindMan" value="{{num}}" />
+          <text class="normal" bindtap='bindmax'>+</text>
+        </view>
+
+      </view>
+    </view>
+  </view>
+
+  <view class="order-user">
+    <view class="order-user-information">游客信息</view>
+    <view class="order-user-name">
+      <text>游客姓名:  </text>
+      <input placeholder="请填写姓名" bindchange="changeName" auto-focus date-value='username'></input>
+
+    </view>
+
+    <view class="order-user-name">
+      <text>游客电话:  </text>
+      <input placeholder="请填写手机号码" auto-focus date-value='tel' bindchange="changeTel"></input>
+    </view>
+  </view>
+
+  <view class="order-bottom">
+    <text> 总价：￥</text>
+    <input type="number" bindchange="bindcount" value="{{count}}" />
+    <button form-type="sumit" bindtap='submitOrder'>提交订单</button>
+  </view>
+
+</view>

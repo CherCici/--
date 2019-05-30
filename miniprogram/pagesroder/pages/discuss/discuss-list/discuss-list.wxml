@@ -1,0 +1,12 @@
+<!--miniprogram/pagesroder/pages/discuss/discuss-list/discuss-list.wxml-->
+<template class="discuss">
+<view class="discusscontianer">
+  <view wx:for="{{order}}" wx:for-item="item" wx:key="key">
+    <view class="discuss-header">
+      <view class="titimage">{{item.avatarUrl}}</view>
+      <view class="username">{{item.username}}</view>
+    </view>
+    <view class="content">积分IE和覅人保福热办公{{item.content}}</view>
+    <image class="image" src='item.image'></image>  </view>
+</view>
+</template>

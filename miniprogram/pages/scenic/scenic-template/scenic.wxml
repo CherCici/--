@@ -1,0 +1,17 @@
+<!--miniprogram/pages/scenic.wxml-->
+<template name="scenicItem">
+ <view class="scenic-container">
+   <view class="scenic-list">
+     <image class="scenic-img" src="{{image}}"></image>
+     <view id="scenic-content"> 
+       <text class="scenic-title">{{s_name}}</text>
+       <text class="scenic-lever">{{lever}}</text>
+       <text class="scenic-des">{{characteristic}}</text>
+       <view class="scenic-cici">
+         <!--<text class="scenic-add">{{item.address}}</text>-->
+         <text class="scenic-price">￥{{price}} </text> 
+       </view>
+      </view>
+   </view>
+ </view>
+</template>

@@ -1,0 +1,30 @@
+/* miniprogram/pagesroder/pages/discuss/discuss.wxss */
+.inputdis{
+  width: 95%;
+  height: 300rpx;
+  margin:5% auto;
+  background-color: white;
+  border-radius: 20rpx;
+}
+.btm{
+  margin: 20rpx auto;
+  width:95%;
+  height: 100rp;
+}
+.pulishBtn{
+margin: 20rpx auto;
+  text-align: center;
+  width:30%;
+  height: 50rpx;
+  border: 2rpx solid #1cc4bb;
+  margin-left:50%;
+  color: #1cc4bb;
+  font-size: 20px;
+}
+.uploader-text{
+  border:2rpx solid #1cc4bb;
+  width:25%;
+  height: 80rpx;
+  font-size: 16px;
+  color: #666
+}

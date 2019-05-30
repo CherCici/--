@@ -1,0 +1,87 @@
+
+.gl-contianer{
+ 
+  width:98%;
+  height: 100%;
+  background-color: white;
+}
+
+
+.gl-image{
+  width:100%;
+  height: 380rpx;
+  border-radius: 20rpx;
+}
+.address-view{
+  position: absolute;
+  margin: -80rpx 50rpx;
+  height: 50rpx;
+  width:18%;
+  background-color: rgb(20, 20, 20) ;
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  border-radius: 50rpx;
+}
+.address-image{
+  margin:10rpx auto;
+   vertical-align: middle;
+  width:25rpx;
+  height: 35rpx;
+  float:left;
+}
+.content-1{
+  background-color: white;
+  width: 100%;
+  margin-top:-30rpx ;
+}
+.gl-city{
+  margin:5rpx auto;
+   vertical-align: middle;
+  font-size: 14px;
+  height: 50rpx;
+  color: white;
+
+}
+.gl-title{
+  margin: 0 5rpx 0 5rpx;
+  position: relative;
+  margin-top:40rpx;
+   
+  color:rgb(20, 20, 20);
+  font-weight: bold;
+  font-size: 28rpx;
+ width:99%;
+ overflow: hidden;
+}
+.gl-content{
+  text-align: center;
+  margin: 0 5rpx 0 5rpx;
+  height: 120rpx;
+  width:98%;
+  color: #666;
+  font-size: 12px;
+  overflow: hidden;
+}
+.user{
+  margin-top:20rpx;
+  margin-left: 10rpx;
+  width:99%;
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+}
+.gl-userimage{
+  float: left;
+  width:50rpx;
+  height: 50rpx;
+ border-radius: 50%;
+ background-size: cover;
+ background-color: white;
+}
+.gl-username{
+  float: left;
+  font-size: 14px;
+  margin: 0 10rpx;
+
+}

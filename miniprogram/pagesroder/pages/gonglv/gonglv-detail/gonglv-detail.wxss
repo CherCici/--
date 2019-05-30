@@ -1,0 +1,52 @@
+/* miniprogram/pagesroder/pages/gonglv/gonglv-detail/gonglv-detail.wxss */
+.gonglv-detail-container{
+  width:100%;height: 100%;
+}
+.gonglv-detail-image{
+  width: 100%;
+  height: 350rpx;
+  margin: 0 auto;
+}
+.gonglv-detail-header{
+  margin: -50rpx 100rpx;
+  
+   margin-top:20rpx;
+  margin-left: 10rpx;
+  width:99%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.gl-userimage{
+  float: left;
+  width:100rpx;
+  height: 100rpx;
+ border-radius: 50%;
+ background-size: cover;
+ background-color: white;
+}
+.gl-username{
+  float: left;
+  font-size: 14px;
+  margin: 0 10rpx;
+
+}
+
+/**攻略标题**/
+.gonglv-title{
+  width:95%;
+  height: auto;
+  margin:50rpx auto;
+  font-size: 20rpx;
+  font-weight: bold;
+  color: black;
+
+}
+.gonglv-content{
+  width: 85%;
+  margin: 20rpx auto;
+  height: auto;
+  font-size: 14px;
+  color: #666;
+}

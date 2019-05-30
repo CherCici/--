@@ -1,0 +1,41 @@
+/* pagesroder/pages/order-detail/order-datail.wxss */
+/* miniprogram/pagesorder/pages/order-detail/order-datail.wxss */
+.order-detail-container{
+   width: 100%;
+ height: 100%;
+}
+.ruyaun{
+  width: 100%;
+  margin:30rpx auto;
+  font-size: 18rpx;
+  text-align: center
+}
+.ruyuan text{
+  width: 100%;
+  vertical-align: middle;
+  height: 50rpx;
+  display: inline-block;
+  line-height: 50rpx;
+  margin:60rpx auto;
+  font-size: 18px;
+  text-align: center;
+  color:#666;
+}
+.container-box{
+  margin:0 auto;
+  background-color: #f1f1f1;
+  height: 100vh}
+.img-box{
+  margin:5rpx auto;
+  padding: 32rpx;
+  background-color: #fff;
+  border-bottom: 1rpx solid #f1f1f1;
+  position: relative}
+  .img-box canvas{
+    margin:20rpx auto;
+  }
+.img-box image{
+  width: 686rpx;
+  height: 686rpx;
+  background-color: #f1f1f1}
+

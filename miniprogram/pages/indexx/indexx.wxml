@@ -1,0 +1,78 @@
+<!--pages/indexx/indexx.wxml-->
+<dialog id='dialog' 
+      title='登录提示' 
+      content='小程序需要您的授权才能提供更好的服务哦' 
+      confirmText='知道了'
+      bind:confirmEvent='confirmEvent'
+      bind:bindGetUserInfo='bindGetUserInfo'>
+</dialog>
+
+<view class="container">
+  
+  <view class="content">
+    <view class="search">
+      <text>当前位置:</text>
+      <label text="text" bindtap='cityChoose' bindchange='change'>{{cityName}} > </label>
+
+    </view>
+    
+    <swiper class="banner" indicator-dots="{{indicatorDots}}"
+     autoplay="{{autoplay}}"
+     interval="{{interval}}"
+     duration="{{duration}}"
+     indicator-color="#ffffff"
+    >
+      <swiper-item >
+        <image src='cloud://whereugo-cher-u6yvg.7768-whereugo-cher-u6yvg/QQ图片20190419162202.jpg'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='cloud://whereugo-cher-u6yvg.7768-whereugo-cher-u6yvg/QQ图片20190419162202.jpg'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='cloud://whereugo-cher-u6yvg.7768-whereugo-cher-u6yvg/QQ图片20190419162202.jpg'></image>
+      </swiper-item>
+     </swiper>
+  <!--大分类，景点分类4-->
+   
+      <scroll-view class="vinious-list" flex-x="ture"> 
+        <view class="Cultural" bindtap='bindCultural'> 
+          <image src='cloud://whereugo-cher-u6yvg.7768-whereugo-cher-u6yvg/QQ图片20190419162123.jpg'></image>
+          <text>文化古迹</text>
+        </view>
+        <view class="nation" bindtap='bindNation'> 
+          <image src='cloud://whereugo-cher-u6yvg.7768-whereugo-cher-u6yvg/ggg.jpg'></image>
+          <text>民族特色</text>
+        </view>
+        <view class="regular" bindtap='bindRegular'  > 
+           <image src='cloud://whereugo-cher-u6yvg.7768-whereugo-cher-u6yvg/whdka.jpg'></image> 
+           <text>网红打卡</text>
+         </view>
+        <view class="nature" bindtap='bindNature'>   
+          <image class="last-list" src='cloud://whereugo-cher-u6yvg.7768-whereugo-cher-u6yvg/my-image.jpg'></image> 
+          <text>自然风光</text>
+        </view>
+       
+        
+    </scroll-view>
+    
+    <!--相关推荐-->
+    <view class="recommend" >
+      <view class="recommendTitle">热门推荐</view>
+      <view class="recommend-content" wx:for="{{scenic_hot}}" bindtap='submitOrder' wx:for-item="item" wx:key="key" data-_id="{{item._id}}" wx:if="{{index<20}}">
+        <image class="recommend-img"    src="{{item.image}}"></image>
+        
+        <view class="">
+          <text class="recommend-title" >{{item.s_name}}</text>
+          <text class="recommend-title1" >{{item.characteristic}}</text>
+          <text class="recommend-price">￥{{item.price}} 起</text>
+        </view>
+         
+      </view>
+      <view class="recommendTitle" bindtap='morehot'>更多 >></view>
+    
+    </view>
+
+    </view>
+    <view class="dibu">
+    </view>
+</view>

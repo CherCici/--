@@ -1,0 +1,2 @@
+/* miniprogram/pages/scenic/scenic.wxss */
+@import "../../scenic/scenic-template/scenic.wxss";

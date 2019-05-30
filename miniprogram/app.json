@@ -1,0 +1,94 @@
+{
+  "pages": [
+    "pages/indexx/indexx",
+    "pages/order/order-detail/order-detail",
+    "pages/gl/gl",
+    "pages/index/index",
+    "pages/openapi/openapi",
+    "pages/chooseLib/chooseLib",
+    "pages/databaseGuide/databaseGuide",
+    "pages/deployFunctions/deployFunctions",
+    "pages/storageConsole/storageConsole",
+    "pages/userConsole/userConsole",
+    "pages/cityChoose/city",
+    "pages/own/owm",
+    "pages/orderrr/order/order",
+    "pages/compnent/di"
+    
+    
+  ],
+  "subPackages": [
+    {
+      "root": "pagesroder",
+      "name": "pagesroder",
+      "pages": [
+        "pages/order-detail/order-datail",
+        "pages/discuss/discussco",
+        "pages/discuss/discuss-list/discuss-list",
+        "pages/discuss/discuss-list/discuss-list/discuss-template/template",
+        "pages/order/order",
+        "pages/gonglv/gonglv/gonglv",
+        "pages/gonglv/gonglv-detail/gonglv-detail",
+        "pages/scenic/scenic/scenic",
+        "pages/scenic/scenic-detail/scenic-detail",
+        "pages/scenic/scenic"
+      ]
+    },{
+      "root": "packgesA",
+      "name": "packgesA",
+      "pages": [
+        
+        
+      ],
+      "independent":true
+    }
+  ],
+  
+  
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/indexx/indexx",
+        "text": "首页",
+        "color": "#373737",
+        "selectedColor": "#1cc4bb",
+        "iconPath": "pages/image/home-2.png",
+        "selectedIconPath": "pages/image/home-1.png",
+        "background-color": "#f6f6f6"
+      },
+      {
+        "pagePath": "pages/gl/gl",
+        "text": "攻略",
+        "color": "#373737",
+        "selectedColor": "#1cc4bb",
+        "iconPath": "pages/image/gl-1.png",
+        "selectedIconPath": "pages/image/gl-2.png",
+        "background-color": "#f6f6f6"
+      },
+      {
+        "pagePath": "pages/orderrr/order/order",
+        "text": "订单",
+        "color": "#373737",
+        "selectedColor": "#1cc4bb",
+        "iconPath": "pages/image/order-1.png",
+        "selectedIconPath": "pages/image/order-2.png",
+        "background-color": "#f6f6f6"
+      },
+      {
+        "pagePath": "pages/own/owm",
+        "text": "我的",
+        "color": "#373737",
+        "selectedColor": "#1cc4bb",
+        "iconPath": "pages/image/own-1.png",
+        "selectedIconPath": "pages/image/own-2.png",
+        "background-color": "#f6f6f6"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#1cc4bb",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "首页"
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,23 @@
+<!--miniprogram/pages/scenic/scenic.wxml-->
+<import src="../scenic/scenic-template/scenic.wxml" />
+
+<view class="scen-contaniner">
+  <form bindsubmit='formSubmit'>
+    <view class="scenic-top">
+      <view class="scenic-search">
+        <icon type="search" size='50rpx' color='white'></icon>
+        <input class="scenic-search-input" type="text" confirm-type="search" placeholder='输入景点名称搜索' value="{{searchValue}}" bindinput="inputbind" bindconfirm='query'>
+        </input>
+        <label class="scenic-city" bindtap='bindsearch'>搜索</label>
+        <image class="search-city"></image>
+
+      </view>
+    </view>
+    <view class="scenic-content">
+      <view wx:for="{{scenic_list}}" bindtap='goOrder' wx:for-item="item" wx:key="key" data-_id="{{item._id}}">
+        <template is="scenicItem" data="{{...item}}" />
+      </view>
+    </view>
+  </form>
+
+</view>

@@ -1,0 +1,65 @@
+<!--pages/own/owm.wxml-->
+<import src="./diss/diss.wxml" />
+<view class="owncontainer">
+  <!-- 用户 openid -->
+  <view class="userinfo">
+    <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="userinfo-avatar" style="background-image: url({{avatarUrl}})"></button>
+    <open-data type="userNickName" lang="zh_CN"></open-data>
+    <view>
+      <button class="userinfo-nickname" bindtap="onGetOpenid"></button>
+    </view>
+  </view>
+  <view class="swerper">
+    <block wx:for="{{swerptab}}" wx:key="key">
+      <view class="swerper-list {{currtab==item.index?'on':''}}" data-current="{{item.index}}" bindtap='tabSwich'>{{item.name}}</view>
+    </block>
+  </view>
+  <swiper current='{{currtab}}' class="swiper-box" duration="100" style="height:{{deviceH-31}}px" bindchange='tabchange'>
+    <!-- 基本信息 -->
+    <swiper-item>
+
+      <scroll-view>
+        <view class="userinformation">
+          <view class="information">
+            <text>修改个人信息</text>
+          </view>
+          <open-data type="groupName" open-gid="xxxxxx"></open-data>
+          <open-data type="userGender" lang="zh_CN"></open-data>
+          <view x:for="{{user}}" class="" wx:for-item="items" wx:key="key" 
+          ></view>
+          <view class="input-tel">
+            <label>昵称:</label>
+            <input placeholder='{{items.nickname}}'></input>
+          </view>
+          <view class="input-tel">
+            <label>城市：</label>
+            <input placeholder='{{items.city}}'></input>
+          </view>
+          <view class="input-tel">
+            <label>联系方式：</label>
+            <input placeholder='{{items.tel}}'>{{items.tel}}</input>
+          </view>
+          <button>修改</button>
+        </view>
+
+      </scroll-view>
+    </swiper-item>
+    <!-- 我的评价 -->
+    <swiper-item>
+      <scroll-view scroll-y='true' class="scroll-view1">
+        <view wx:for="{{discuss}}" class="" wx:for-item="item" wx:key="key" data-_id="{{item._id}}">
+          <template is="discuss" data="{{...item}}" />
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <!-- 我的攻略 -->
+    <swiper-item>
+      <scroll-view scroll-y='true' class="scroll-view1">
+        <button class="gonglv" placeholder='发布攻略' bindtap='gonglv'>+</button>
+
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+
+
+</view>

@@ -1,0 +1,124 @@
+<!--pages/order/order.wxml-->
+
+<view class="order-container">
+  <!--切换栏-->
+  <view class="swerper">
+    <block wx:for="{{swerptab}}" wx:key="key">
+      <view class="swerper-list {{currtab==item.index?'on':''}}" data-current="{{item.index}}" bindtap='tabSwich'>{{item.name}}</view>
+    </block>
+  </view>
+
+  <!--已完成内容-->
+  <swiper current='{{currtab}}' class="swiper-box" duration="100" style="height:{{deviceH-31}}px" bindchange='tabchange'>
+    <swiper-item>
+      <scroll-view class="order-box" scroll-y="{{true}}">
+        <view wx:for="{{order}}" class="scenic_list" wx:for-item="item" wx:for-index="index" wx:key="index" data-id="{{item._id}}">
+          <view class="finishCurrent">
+            <view class="ordertitle">
+              <view class="scenicName">{{item.name}}</view>
+              <view class="dec" bindtap='code' data-_id="{{item._id}}">详情 >></view>
+            </view>
+            <view class="content">
+              <image src="{{item.o_image}}" class="scenicimage"></image>
+              <view class="orderdetail">
+               <text> 使用日期：{{item.userdate}}</text>
+                <text> 数量：{{item.amount}} 张</text>
+                <text>总价：￥{{item.totalprice}} </text>
+                <view class="cancal">
+                <text>状态：未使用</text>
+                <button bindtap='cancal' data-_id="{{item._id}}" value="">取消</button>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+
+       
+
+      </scroll-view>
+    </swiper-item>
+    <!--待使用结束-->
+
+    <swiper-item>
+      <scroll-view class="order-box" scroll-y>
+          <view wx:for="{{finnishorder}}" class="scenic_list" wx:for-item="items" wx:for-index="index" wx:key="index" data-id="{{item._id}}">
+          <view class="userCurrent">
+            <view class="ordertitle">
+              <view class="scenicName">{{items.name}}</view>
+              <view class="dec" >已完成 </view>
+            </view>
+            <view class="content">
+              <image src="{{items.o_image}}" class="scenicimage"></image>
+              <view class="orderdetail">
+               <text> 使用日期：{{items.userdate}}</text>
+                <text> 数量：{{items.amount}} 张</text>
+                <text>总价：￥{{items.totalprice}}</text>
+                <view class="cancal">
+                <text>状态：交易成功</text>
+                
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+
+
+    <!--待评价-->
+    <swiper-item>
+      <scroll-view class="order-box" scroll-y="true">
+          <block wx:for="{{discuss}}" vlass="scenic_list" wx:for-item="items" wx:for-index="index" wx:key="index" data-id="{{item._id}}">
+          <view class="disCurrent">
+            <view class="ordertitle">
+              <view class="scenicName">{{items.name}}</view>
+              <view class="dec" >已使用</view>
+            </view>
+            <view class="content">
+              <image src="{{items.o_image}}" class="scenicimage"></image>
+              <view class="orderdetail">
+               <text> 使用日期：{{items.userdate}}</text>
+                <text> 数量：{{items.amount}} 张</text>
+                <text>总价：￥{{items.totalprice}}</text>
+                <view class="cancal">
+                <text>状态：已使用</text>
+                <button bindtap='waitdiscuss' data-_id="{{items._id}}" value="">待评价</button>
+                </view>
+              </view>
+            </view>
+          </view>
+        </block>
+      
+      </scroll-view>
+    </swiper-item>
+
+    <!--已取消-->
+     <swiper-item>
+      <scroll-view class="order-box" scroll-y="true">
+          <block wx:for="{{scenic_list}}" vlass="scenic_list" wx:for-item="items" wx:for-index="index" wx:key="index" data-id="{{item._id}}">
+          <view class="cancelCurrent">
+            <view class="ordertitle">
+              <view class="scenicName">{{items.name}}</view>
+              <view class="dec" bindtap='code' data-_id="{{items._id}}">已取消</view>
+            </view>
+            <view class="content">
+              <image src="{{items.o_image}}" class="scenicimage"></image>
+              <view class="orderdetail">
+               <text> 使用日期：{{items.userdate}}</text>
+                <text> 数量：{{items.amount}} 张</text>
+                <text>总价：￥{{items.totalprice}}</text>
+                <view class="cancal">
+                <text>状态：已失效</text>
+                <button bindtap='deleteorder' data-_id="{{items._id}}" value="">删除</button>
+                </view>
+              </view>
+            </view>
+          </view>
+        </block>
+        
+
+      </scroll-view>
+    </swiper-item>
+    <view class=""></view>
+  </swiper>
+</view>

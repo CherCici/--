@@ -1,0 +1,20 @@
+ <!--pages/gl/gl.wxml-->
+
+<import src="../gl/gl-template/gl-template.wxml"/>
+<view class="scenic-search">
+        
+        <input class="scenic-search-input"   placeholder='搜索' value="{{searchValue}}" bindinput="inputbind" auto-focus>
+        </input>
+        <button bindtap='bindsearch'>搜索</button>
+        <view class="address-view1" bindtap='cityChoose'>
+        <image class="address-image1" src="/pages/image/4613408bd3d3d26dcm31e.png"></image>
+        <view class="gl-city1" bindchange="citychange" >{{cityName}} ></view>
+      </view>
+        <image class="search-city"></image>
+
+      </view>
+<view class="gl-conteanir">
+<view wx:for="{{gl}}"  class="dl-view"bindtap='godetail' wx:for-item="item" wx:key="key" data-_id="{{item._id}}">
+     <template is="gl" data="{{...item}}"/>
+   </view>
+   </view>

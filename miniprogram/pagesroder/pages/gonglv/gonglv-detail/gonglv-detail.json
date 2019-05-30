@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#1cc4bb",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "攻略详情",
+  "usingComponents": {},
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 100
+}

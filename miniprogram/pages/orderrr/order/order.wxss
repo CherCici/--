@@ -1,0 +1,145 @@
+/* pages/order/order.wxss */
+.swerper{
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #f1f1f1;
+  color: #666;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1rpx solid white;
+}
+.swerper-list{
+  margin:0 30rpx;
+  padding: 0 5rpx;
+  font-size: 16px;
+}
+.on{
+  border-bottom: 2rpx solid #1cc4bb;
+  color:#1cc4bb;
+}
+.swiper-box{
+  width:100%;
+  margin:20rpx auto;
+  height: 10000rpx;
+  
+ 
+}
+
+.finishCurrent{
+  margin:20rpx auto;
+  width:95%;
+  
+  background: #fff;
+  font-size: 14px;
+
+}
+.userCurrent{
+  margin:0 auto;
+  width:95%;
+background: #fff;
+  font-size: 14px;
+}
+.cancelCurrent{
+  margin:0 auto;
+  width:95%;
+background: #fff;
+  font-size: 14px;
+}
+.disCurrent{
+    width:95%;
+  margin:0 auto;
+background: #fff;
+  font-size: 14px;
+}
+ .scenic_list{
+  width:100%;
+ margin:20rpx auto;
+ 
+  
+
+}
+ 
+.ordertitle{
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 1rpx solid rgba(196, 192, 192, 0.933);
+  display: flex;
+  flex-direction: row;
+
+}
+.scenicName{
+  width:35%;
+  height: 80rpx;
+  display: inline-block;
+  line-height: 80rpx;
+  vertical-align: middle;
+  margin-left:5%;
+  font-size: 16px;
+  color:#666;
+  font-weight: bold;
+  
+}
+.dec{
+  margin-top:20rpx;
+  width: 20%;
+  height: 80rpx;
+  font-size: 14px;
+  padding-left: 40%;
+  float: right;
+  color: #1cc4bb
+}
+.content{
+  width: 100%;
+  margin: 20rpx auto;
+  display: flex;
+  flex-direction: row;
+  height: 280rpx;
+}
+
+.scenicimage{
+  margin-top:30rpx;
+  vertical-align: middle;
+  width: 25%;
+  border-radius: 20rpx;
+  height: 150rpx;
+
+}
+.orderdetail{
+  float:left;
+  padding-left:100rpx;
+  display: flex;
+  flex-direction: column;
+}
+.orderdetail text{
+  margin-top:15rpx;
+  width: 100%;
+  height: 35rpx;
+  color: #666;
+  font-size: 14px;
+
+}
+.cancal{
+  width: 100%;
+  height: 35rpx;
+  color: #666;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+}
+.cancal button{
+  margin-left: 50rpx;
+  width:200rpx;
+  height: 50rpx;
+  border: 1rpx solid rgba(196, 192, 192, 0.933);
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+  display: inline-block;
+  line-height: 50rpx;
+ 
+  
+}

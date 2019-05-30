@@ -1,0 +1,344 @@
+/* pages/order/order-detail/order-detail.wxss */
+
+.order-detail-contaniner{
+  margin:0 auto;
+  width:95%;
+  height: 100%;
+}
+.order-scenic{
+  margin: 50rpx auto;
+  height: 500rpx;
+  background-color: white;
+  border-radius: 20rpx;
+}
+.order-scenic-in{
+  
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+   border-bottom: 1rpx solid rgba(196, 192, 192, 0.933);
+}
+.order-scenic-name{
+  margin-left:10rpx;
+  margin-top:20rpx;
+  font-size: 20px;
+  color: #666;
+  font-weight: bold;
+}
+.order-scenic-price{
+  float: right;
+  margin-left:10rpx;
+  margin: 20rpx;
+  color: #666;
+  font-size: 12px;
+  display: flex;
+  height: 30rpx;
+  flex-direction: row;
+ 
+
+}
+
+
+.text1{
+  color:coral;
+  font-size: 20px;
+  font-weight: bold;
+}
+.text2{
+  padding-left: 10rpx;
+  padding-top: 10rpx;
+  position: relative;
+
+}
+
+.order-date{
+  margin: 30rpx auto;
+  height: 300rpx;
+  margin-left:10rpx;
+  background-color: white;
+  border-radius: 20rpx;
+}
+.order-scenic-1{
+  margin-top:5%;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+
+}
+.order-scenic-count{
+  margin-left:2.5%;
+  margin-top:2.5%;
+  width:16.5%;
+  height:100rpx;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: center;
+  font-size: 20px;
+  color: #1cc4bb;
+}
+
+  .order-scenic-stepper{
+    margin-left:50%;
+    display: flex;
+    flex-direction: row;
+    margin-top:50rpx;
+    font-size: 16px;
+    float:right;
+    width: 40%;
+  }
+  .order-scenic-stepper text{
+      width:50rpx;
+      font-size: 20px;
+    color: #fff;
+      border:2rpx solid rgba(196, 192, 192, 0.933);
+      text-align: center;
+      display: inline-block;
+      height: 50rpx;
+      line-height: 50rpx;
+      vertical-align: middle;
+      border-radius: 10rpx;
+      background-color: #1cc4bb;
+
+  }
+  .order-scenic-stepper input{
+    width:30%;
+    margin-left:7.5%;
+
+  }
+  .order-user{
+  margin: 20rpx auto;
+  margin-top:20rpx;
+  font-size: 20px;
+  color: #666;
+  height: 300rpx;
+  background-color: white;
+  border-radius: 20rpx;
+}
+.order-user-information{
+  width:95%;
+  height: 100rpx;
+  margin-left:10rpx;
+  margin-top:50rpx;
+  font-size: 20px;
+  color: #666;
+  font-weight: bold;
+  background-color: f6f6f6;
+}
+.order-user-name{
+  margin-left:10rpx;
+  margin-right: 10rpx;
+  margin-top:20rpx;
+  height: 50rpx;
+  font-size:  14px;
+  color: #666;
+  display: flex;
+  flex-direction: row;
+  
+}
+.order-user-name input{
+  margin-left:15%;
+}
+.order-bottom{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  background-color: white;
+  
+}
+.order-bottom text{
+  color:#666;
+  font-size: 16px;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 100rpx;
+  
+
+}
+.order-bottom input{
+  float: left;
+  color: coral;
+  width:30%;
+  height: 100rpx;
+}
+.order-bottom button{
+  margin:10rpx auto;
+  margin-right:5%;
+  color:white;
+  background-color:coral;
+  width: 30%;
+  height: 80rpx;
+  vertical-align: middle;
+}
+
+
+.chooseDate{
+  width: 15%;
+  height: 100rpx;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 50rpx;
+  border-radius: 20rpx;
+  text-align: center;
+  font-size: 20px;
+  background-color: white;
+  color: #1cc4bb;
+  margin-bottom: 5rpx;
+  
+}
+.showDate{
+  margin-left:17.5%;
+  width: 30%;
+  height: 100rpx;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 50rpx;
+  border-radius: 20rpx;
+  text-align: center;
+  border: 1rpx solid #1cc4bb;
+  margin-bottom: 5rpx;
+}
+.moreDate{
+  margin-left:17.5%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 50rpx;
+  border-radius: 20rpx;
+  text-align: center;
+  width: 15%;
+  height: 100rpx;
+  font-size: 16px;
+  border: 1rpx solid rgba(196, 192, 192, 0.933);
+  margin-bottom: 5rpx;
+}
+.canlendarBgView {
+  margin:-150rpx auto;
+  margin-left:-2.5%;
+  background-color: #f6f6f6;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+ 
+.canlendarView {
+  color: #1cc4bb;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.canlendarTopView {
+  height: 80rpx;
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.leftBgView {
+  text-align: right;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row-reverse;
+}
+ 
+.leftView {
+  width: 80rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.centerView {
+  width: 50%;
+  height: 80rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.rightBgView {
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+}
+ 
+.rightView {
+  width: 80rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.weekBgView {
+  height: 50rpx;
+  line-height: 50rpx;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.weekView {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 28rpx;
+}
+ 
+.dateBgView {
+  height: 500rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+ 
+.dateEmptyView {
+  width: 102rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.dateView {
+  width:102rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.datesView {
+  width: 60rpx;
+  height: 60rpx;
+  color: #1cc4bb;
+  font-size: 26rpx;
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.dateSelectView {
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  top: 0;
+  color: #fff;
+  background-color: #1cc4bb;
+}
+
+ 
+

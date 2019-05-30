@@ -1,0 +1,20 @@
+<template name="gl">
+  <view class="gl-contianer">
+    <view>
+      <image class="gl-image" src="{{image}}"></image>
+      <view class="address-view">
+        <image class="address-image" src="/pages/image/4613408bd3d3d26dcm31e.png"></image>
+        <view class="gl-city">{{city}}</view>
+      </view>
+      <view class="content-1">
+        <view class="gl-title">{{title}}</view>
+        <view class="gl-content">{{content}}</view>
+        <view class="user">
+          <image class="gl-userimage" src="{{avatarUrl}}"></image>
+          <view class="gl-username">{{username}}</view>
+          <view>{{commentNum}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,12 @@
+<template name="discuss">
+<view class="dis">
+  <view class="discusscontianer">
+    <view class="discuss-header">
+      <image  class="titimage" src="{{avatarUrl}}"></image> 
+      <view class="username">{{username}}</view>
+    </view>
+    <view class="content">{{content}}</view>
+   <view class="classddd"> <image class="image" src='{{image}}'></image></view></view>
+  </view>
+
+</template>

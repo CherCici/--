@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "#1cc4bb",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+    "dialog":"../compnent/di"}
+}

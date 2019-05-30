@@ -1,0 +1,30 @@
+<!--miniprogram/pagesroder/pages/gonglv/gonglv/gonglv.wxml-->
+
+<view class="gonglv-container">
+  <view>
+    <text>标题</text>
+    <textarea class="inputdis1" bindinput='textInputTitle' placeholder='在此输入攻略标题' value='{{textTitle}}' auto-focus> </textarea>
+     <text>内容</text>
+    <textarea class="inputdis" bindinput='textInput' placeholder='在此输入攻略内容' value='{{text}}' auto-focus> </textarea>
+    <!--<view class="citychoose"  bindtap='cityChoose'>城市:</view>-->
+    <view class="address-view" bindtap='cityChoose'>
+        <image class="address-image" src="/pages/image/4613408bd3d3d26dcm31e.png"></image>
+        <view class="gl-city" bindchange="citychange">{{cityName}} ></view>
+      </view>
+   
+     <button class='pulishBtn' bindtap='pulish'> 发布</button>
+    <view class='btm'>
+      <!-- 上传图片 -->
+      <view class="uploader">
+        <view class="uploader-text" bindtap="doUpload">
+          <button>上传图片</button>
+        </view>
+        <view class="uploader-container" wx:if="{{imgUrl}}">
+          <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
+        </view>
+      </view>
+    </view>
+   
+  </view>
+
+</view>

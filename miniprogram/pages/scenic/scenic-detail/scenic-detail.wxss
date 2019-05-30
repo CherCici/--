@@ -1,0 +1,127 @@
+/* miniprogram/pages/scenic/scenic-detail/scenic-detail.wxss */
+/*@import "../scenic-template/scenic.wxss";*/
+@import "./discusstemplate/diss.wxss";
+
+.scenic-detail-container{
+  width:100%;
+  height: auto;
+}
+.detail{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.scenic-detail-img{
+  margin: 0 auto;
+  width: 100%;
+  height: 450rpx;
+  position: absolute;
+  clip: rect(0rpx 800rpx 400rpx 0rpx);
+}
+.scenic-detail-baseInformation{
+    margin:380rpx auto;
+    height: 300rpx;
+    width: 90%;
+    background-color:white;
+    border-radius: 20rpx;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+.scenic-detail-name{
+   margin-top:30rpx;
+   font-size: 20px;
+   font-weight: bold;
+   white-space: 2.5%;
+   margin-left:8%;
+   
+}
+.scenic-detail-des{
+  margin-top:30rpx;
+  color:#666666;
+  margin-left:8%;
+}
+.scenic-detail-baseInformation view{
+  display: flex;
+  flex-direction: row;
+}
+.scenic-detail-type{
+  float: left;
+  margin-top:30rpx;
+  color:white;
+  margin-left:8%;
+  background-color: #1cc4bb;
+  width:20%;
+  text-align: center;
+  height: 45rpx;
+  
+}
+.scenic-detail-lever{
+  margin-top:30rpx;
+  float: left;
+  margin-left:10rpx;
+  color:#1cc4bb;
+  border: 1rpx solid #1cc4bb;
+  width:20%;
+
+  text-align: center;
+  height: 44rpx;
+  
+  
+}
+.scenic-detail-address{
+  margin: -350rpx auto;
+  width:100%;
+  height:200rpx;
+  background-color: white;
+ 
+  font-size: 12px;
+  color:#666666;
+}
+.scenic-detail-addarea{
+  margin-top: 30rpx;
+  width:95%;
+  height: 50rpx;
+  color:#666666;
+  margin-left: 5%;
+
+}
+.scenic-detail-add{
+  margin-top: 30rpx;
+  margin-left: 5%;
+  width:95%;
+  height: 50rpx;
+}
+.scenic-detail-price-text{
+    margin: 50rpx auto;
+
+  width: 95%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color:coral;
+
+}
+.scenic-detail-price{
+  width:95%;
+  height: 300rpx;
+  margin: 380rpx auto;
+  background-color: white;
+  text-align: center;
+}
+
+.scenic-detail-price button{
+  vertical-align: middle;
+  text-align: center;
+  margin: 25rpx auto;
+  width: 50%;
+  height: 75rpx;
+  color: white;
+  font-size: 18px;
+  background-color: coral;
+  
+
+}
+.discuss {
+  margin: -250rpx auto;
+}

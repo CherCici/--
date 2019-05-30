@@ -1,0 +1,11 @@
+<!--miniprogram/pagesorder/pages/order-detail/order-datail.wxml-->
+<view class="order-detail-container">
+<view class="ruyuan"><text>扫码入园</text></view>
+<!-- 存放二维码的图片-->
+<view class="container-box">
+    <view class="img-box">
+        <canvas bindtap="previewImg" hidden="{{canvasHidden}}" style="width: 686rpx;height: 686rpx;background:#f1f1f1;" canvas-id="mycanvas"/>
+        <!--<image bindtap="previewImg" mode="scaleToFill" src="{{imagePath}}"></image>-->
+    </view>
+</view>
+</view>

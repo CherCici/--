@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#1cc4bb",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "景点门票",
+  "usingComponents": {},
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 100
+}

@@ -1,0 +1,35 @@
+<!--miniprogram/pages/scenic/scenic-detail/scenic-detail.wxml-->
+<import src="./discusstemplate/diss.wxml"/>
+<view class="scenic-detail-container">
+
+  <view wx:for="{{scenic_list}}"  wx:for-item="item" wx:key="" class="detail" >
+    <!--展示景点详细信息-->
+    <image class="scenic-detail-img" src="{{item.image}}" ></image>
+    <view class="scenic-detail-baseInformation">
+       <text class="scenic-detail-name">{{item.s_name}}</text>
+       <text class="scenic-detail-des">{{item.characteristic}}</text>
+       <view>
+         <text class="scenic-detail-type">{{item.type}}</text>
+         <text class="scenic-detail-lever">{{item.lever}}</text>
+       </view>
+       
+    </view>
+        <!--展示景点地址信息-->
+    <view class="scenic-detail-address">
+       <view class="scenic-detail-addarea" value="">所属区域：{{item.address_area}}</view>
+       <view class="scenic-detail-add" value="">详细地址：{{item.address}}</view>
+    </view>
+    <!--提交预订信息-->
+    <view class="scenic-detail-price" >
+      
+      <text class="scenic-detail-price-text">￥{{item.price}}</text>
+      <button bindtap='submitOrder' data-_id="{{item._id}}" value="预订">立即预订</button>
+    </view>  
+ </view>
+ <view class="discuss">
+<view wx:for="{{discuss}}" class="" wx:for-item="item" wx:key="key" data-_id="{{item._id}}">
+     <template is="discuss" data="{{...item}}"/>
+   </view>
+   </view>
+</view>
+

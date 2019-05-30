@@ -1,0 +1,22 @@
+<!--miniprogram/pagesroder/pages/discuss/discuss.wxml-->
+<view class="discuss-container">
+
+
+  <view>
+    <text>请输入评论内容</text>
+    <textarea class="inputdis" bindinput='textInput' placeholder='请填写评论内容' value='{{text}}' auto-focus> </textarea>
+    <view class='btm'>
+      <!-- 上传图片 -->
+      <view class="uploader">
+        <view class="uploader-text" bindtap="doUpload">
+          <text>上传图片</text>
+        </view>
+        <view class="uploader-container" wx:if="{{imgUrl}}">
+          <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
+        </view>
+      </view>
+    </view>
+    <view class='pulishBtn' bindtap='pulish'> 发布</view>
+  </view>
+
+</view>

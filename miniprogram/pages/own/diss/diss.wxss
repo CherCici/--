@@ -1,0 +1,63 @@
+/* miniprogram/pagesroder/pages/discuss/discuss-list/discuss-list.wxss */
+.dis{
+  width:95%;
+  background-color: white;
+  margin:20rpx auto;
+  border-radius: 20rpx;
+
+}
+.discusscontianer view{
+  width: 95%;
+  margin:20rpx auto;
+}
+.discuss-header{
+  margin: 20rpx auto;
+  width:95%;
+  height: 150rpx;
+  display: flex;
+  flex-direction: row
+}
+.titimage{
+  margin-top: 30rpx;
+  height:100rpx;
+  width:100rpx;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%
+ 
+
+}
+.username{
+margin-top: 10rpx;
+vertical-align: middle;
+height: 100rpx;
+display: inline-block;
+line-height: 100rpx;
+  width:60%;
+  padding-left: 5%;
+  color: #666;
+  font-size: 32rpx;
+
+}
+.content{
+  margin:20rpx auto;
+
+  width: 70%;
+  height: auto;
+  font-size: 14px;
+  color: #666;
+  
+
+}
+.classddd{
+  margin:0 auto;
+  width: 80%;
+  height: auto;
+}
+.image{
+  margin:20rpx auto;
+  width:60%;
+  height: 150rpx;
+  color: #666;
+  white-space: nowrap;
+}
